@@ -1,13 +1,13 @@
 # README for Animals Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
-- **Assignment:** Animals Script – Case Statement
-- **Date:** [Date of Completion]
+- **Name:** Tyler Momani  
+- **Course:** CPSC 298 – Introduction to Nix and Shell Scripting  
+- **Assignment:** Animals Script – Case Statement  
+- **Date:** October 26, 2025  
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain how it classifies animals and how the program continues to run until the user types "Goodbye".]
+This Bash script prompts the user to enter an animal name in **ALL CAPS** and uses a `case` statement to classify it as a *domestic*, *wild*, or *unknown* animal. The program keeps prompting the user until they type **"Goodbye"**, at which point it exits gracefully. The goal of this assignment is to demonstrate control flow in Bash using loops and pattern matching.
 
 ## Animal Classification Rules
 This script determines the type of animal according to the following logic:
