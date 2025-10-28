@@ -28,17 +28,19 @@ To test with an input file (for example, `animals-input`):
 ./animals.sh < animals-input
 ```
 ## How the Script Works
-[Explain in 3-5 sentences how your script works. Include information about:]
-- The use of the while loop to keep asking for user input
-- The case statement that checks the animal name
-- The * wildcard pattern that handles unknown inputs
-- How the loop exits when "Goodbye" is entered
+The script begins by displaying a greeting message and then enters a `while` loop that repeatedly asks the user to input an animal name. Inside the loop, a `case` statement checks the value entered and matches it against predefined patterns.  
+- If the input is `DOG` or `CAT`, the script prints “domestic animal.”  
+- If the input is `TIGER`, it prints “wild animal.”  
+- The `*` wildcard pattern handles all other inputs by printing “unknown animal.”  
+- When the user types `"Goodbye"`, the loop condition fails, and the program prints a farewell message before exiting gracefully.  
+This structure demonstrates how loops and pattern matching can be combined in Bash to create interactive scripts.
+
 
 ## Testing Results
-[Describe your testing process and results. Include:]
-- Example valid inputs you tested (at least three, including “DOG”, “CAT”, “TIGER”)
-- Example invalid inputs and why they produce “unknown animal”
-- How you used the animals-input file to test
+The script was tested both interactively and using an input file named `animals-input` to confirm that all classifications worked correctly. When entering valid inputs such as `DOG`, `CAT`, and `TIGER`, the program correctly identified them as domestic or wild animals. Invalid inputs like `LION`, `FISH`, or lowercase entries such as `bird` were classified as “unknown animal,” which showed that the case statement and wildcard pattern were functioning as intended.
+
+To test file input, an `animals-input` file was created containing several sample entries, including `DOG`, `CAT`, `TIGER`, `FISH`, and `Goodbye`. Running the command `./animals.sh < animals-input` produced the expected results for each line and exited cleanly after reading “Goodbye.” This confirmed that the script worked properly with both interactive and redirected input.
+
 
 ## Challenges and Solutions
 [Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding case statements, or Git workflow problems.]
