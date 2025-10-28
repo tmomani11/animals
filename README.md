@@ -43,10 +43,8 @@ To test file input, an `animals-input` file was created containing several sampl
 
 
 ## Challenges and Solutions
-[Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding case statements, or Git workflow problems.]
-
+none
 ## Resources
-[List any resources you used (class slides, ChatGPT, etc.). Please refer to the course syllabus for more details on citations.]
-
+ -  Day09-The_case_statement
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.
